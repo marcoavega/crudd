@@ -1,0 +1,8 @@
+# Activa el motor de reescritura de URL
+RewriteEngine On
+
+# Desactiva la indexación de directorios, evitando que se muestren listados de archivos en directorios sin un archivo de índice
+Options All -Indexes
+
+# Esta regla de reescritura redirige las URL que coinciden con el patrón especificado a index.php con la variable views
+RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?views=$1
