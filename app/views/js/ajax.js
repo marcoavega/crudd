@@ -8,14 +8,14 @@ formularios_ajax.forEach(formulario => {
 
         // Muestra una ventana emergente de confirmación con SweetAlert2.
         Swal.fire({
-            title: '¿Estás seguro?',
-            text: '¿Quieres realizar la acción solicitada?',
+            title: 'Ingresar',
+            text: '¿Desea Ingresar?',
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Si, realizar',
-            cancelButtonText: 'No, cancelar'
+            confirmButtonText: 'Aceptar',
+            cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {
                 // Procesa el formulario mediante una solicitud AJAX.
